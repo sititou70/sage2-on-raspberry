@@ -1,4 +1,7 @@
 ---
+- name: update firmware
+  shell: sudo rpi-update
+
 - name: set locale to '{{ sys.locale }}'
   locale_gen:
     name: '{{ sys.locale }}'
@@ -14,3 +17,9 @@
     enabled: '{{ item.enabled | default("yes") }}'
     state: '{{ item.state | default("started") }}'
   with_items: '{{ sys.services }}'
+
+- name: copy config file
+  copy:
+    src: "{{ role_path }}/files/config.txt"
+    dest: /boot/config.txt
+  become: True

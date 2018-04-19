@@ -3,13 +3,11 @@ apt:
   all_update_flag: True
   all_upgrade_flag: True
   packages:
-    - name: python-apt
     - name: vim
     - name: wget
-    - name: apache2
-    - name: php
-    - name: php-mysql
-    - name: php-gd
-    - name: php-mbstring
-    - name: mysql-server
-    - name: python-mysqldb
+    - name: ghostscript
+    - name: imagemagick
+    - name: libcap2-bin
+    - name: libnss3-tools
+    - name: libimage-exiftool-perl
+
