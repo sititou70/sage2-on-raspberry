@@ -5,6 +5,16 @@
     dest: /home/pi/sage2
     version: master
 
+- name: sage2 go linux
+  shell: ./GO-linux
+  args:
+    chdir: /home/pi/sage2/keys
+
+- name: copy config file
+  copy:
+    src: "{{ role_path }}/files/raspberrypi-cfg.json"
+    dest: /home/pi/sage2/config/raspberrypi-cfg.json
+
 - name: chown
   file:
     path: /home/pi/sage2
@@ -13,10 +23,4 @@
     state: directory
     recurse: yes
     mode: 0755
-
-- name: sage2 go linux
-  shell: ./GO-linux
-  args:
-    chdir: /home/pi/sage2/keys
-
 
