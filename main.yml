@@ -1,4 +1,4 @@
-- hosts: raspberry-pi
+- hosts: sage-server
   roles:
     - apt
     - sys
