@@ -19,17 +19,17 @@
 		noDropShadow: true,
 		auto_hide_ui: true,
 		auto_hide_delay: 10,
-		maxWindowWidth : 4096,
+		maxWindowWidth : 99999,
 		maxWindowHeight : 4096
 	},
 	resolution: {
-		width: 800,
-		height: 480
+		width: 1080,
+		height: 1920
 	},
   dimensions: {
     tile_borders: {
-      left: 0.019,
-      right: 0.019,
+      left: 0.002708,
+      right: 0.002708,
       top: 0,
       bottom: 0
     },
@@ -37,12 +37,12 @@
       horizontal: 0,
       vertical: 0
     },
-    tile_width: 0.193,
-    tile_height: 0.111
+    tile_width: 0.072,
+    tile_height: 0.130
   },
 	layout: {
 		rows: 1,
-		columns: 2
+		columns: 6
 	},
 	displays: [
 		{
@@ -52,6 +52,22 @@
 		{
 			row: 0,
 			column: 1
+		},
+ 		{
+			row: 0,
+			column: 2
+		},
+ 		{
+			row: 0,
+			column: 3
+		},
+		{
+			row: 0,
+			column: 4
+		},
+ 		{
+			row: 0,
+			column: 5
 		}
   ],
 	alternate_hosts: [
