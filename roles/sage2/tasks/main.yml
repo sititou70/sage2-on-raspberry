@@ -5,6 +5,11 @@
     dest: /home/pi/sage2
     version: master
 
+- name: copy GO-linux
+  copy:
+    src: "{{ role_path }}/files/GO-linux"
+    dest: /home/pi/sage2/keys/GO-linux
+
 - name: sage2 go linux
   shell: ./GO-linux
   args:
@@ -14,6 +19,11 @@
   copy:
     src: "{{ role_path }}/files/raspberrypi-cfg.json"
     dest: /home/pi/sage2/config/raspberrypi-cfg.json
+
+- name: copy node-itemloader
+  copy:
+    src: "{{ role_path }}/files/node-itemloader.js"
+    dest: /home/pi/sage2/src/node-itemloader.js
 
 - name: chown
   file:

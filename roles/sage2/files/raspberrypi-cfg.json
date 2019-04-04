@@ -1,6 +1,6 @@
 {
 	name: "Raspberry",
-	host: "localhost",
+	host: "raspberrypi",
 	port: 443,
 	index_port: 80,
 	url: "SAGE2_PI",

@@ -11,4 +11,8 @@ apt:
     - name: libcap2-bin
     - name: libnss3-tools
     - name: libimage-exiftool-perl
+    - name: libavcodec-dev
+    - name: libavformat-dev
+    - name: libswscale-dev
+    - name: ffmpeg
 
