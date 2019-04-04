@@ -1,6 +1,4 @@
 ---
-- name: update firmware
-  shell: sudo rpi-update
 
 - name: set locale to '{{ sys.locale }}'
   locale_gen:
