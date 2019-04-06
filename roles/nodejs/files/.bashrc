@@ -112,4 +112,4 @@ if ! shopt -oq posix; then
   fi
 fi
 
-PATH="$PATH":/usr/local/node-v8.11.1-linux-armv7l/bin
+PATH="$PATH":/usr/local/node-v10.15.3-linux-armv7l/bin

@@ -8,17 +8,17 @@
 
 - name: get node binary
   get_url:
-    url: https://nodejs.org/dist/v8.11.1/node-v8.11.1-linux-armv7l.tar.xz
-    dest: /home/pi/node-v8.11.1-linux-armv7l.tar.xz
+    url: https://nodejs.org/dist/v10.15.3/node-v10.15.3-linux-armv7l.tar.xz
+    dest: /home/pi/node-v10.15.3-linux-armv7l.tar.xz
 
 - name: unarchive nodejs binary
   unarchive:
-    src: /home/pi/node-v8.11.1-linux-armv7l.tar.xz
+    src: /home/pi/node-v10.15.3-linux-armv7l.tar.xz
     dest: /home/pi/
     remote_src: yes
 
 - name: copy node
-  shell: cp -r /home/pi/node-v8.11.1-linux-armv7l/ /usr/local/
+  shell: cp -r /home/pi/node-v10.15.3-linux-armv7l/ /usr/local/
   become: True
 
 - name: copy bashrc
@@ -27,5 +27,5 @@
     dest: /home/pi/.bashrc
 
 - name: setcap
-  shell: setcap 'cap_net_bind_service=+ep' /usr/local/node-v8.11.1-linux-armv7l/bin/node
+  shell: setcap 'cap_net_bind_service=+ep' /usr/local/node-v10.15.3-linux-armv7l/bin/node
 

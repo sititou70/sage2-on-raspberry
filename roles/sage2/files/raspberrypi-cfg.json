@@ -1,8 +1,8 @@
 {
 	name: "Raspberry",
-	host: "localhost",
-	port: 443,
-	index_port: 80,
+	host: "raspberrypi",
+	port: 8081,
+	index_port: 8080,
 	url: "SAGE2_PI",
 	background: {
 		color: "#585757",
@@ -71,7 +71,7 @@
 		}
   ],
 	alternate_hosts: [
-		"127.0.0.1"
+		"raspberrypi"
 	],
 	remote_sites: [
 	]
