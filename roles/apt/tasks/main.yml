@@ -1,14 +1,14 @@
 ---
+- name: update all packages
+  apt:
+    upgrade: dist
+  when: apt.all_update_flag
+
 - name: upgrade all packages
   apt:
     name: '*'
     state: latest
   when: apt.all_upgrade_flag 
-
-- name: update all packages
-  apt:
-    upgrade: dist
-  when: apt.all_update_flag
 
 - name: install apt packages
   apt:
